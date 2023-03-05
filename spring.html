@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spring</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        body{
+        background-image: url(cherry.jpg);
+        }
+        main{
+        background-color:rgba(255, 192, 203, 0.466) ;
+        width: auto;
+        margin-left: 0%;;
+        padding: 100px;
+        }
+        h2::before{
+        content:open-quote;
+        font-family: 'Babylonica', cursive;
+        }
+        h2::after{
+        content:close-quote;
+        font-family: 'Babylonica', cursive;
+        }
+        ul{
+        font-size:50px;
+        font-family: 'Babylonica', cursive;
+        list-style-image: url(flower.png);
+        }
+        table {
+        margin-top: 20px;
+        box-shadow: 5px 5px 5px 5px inset rgb(129 175 50), -5px -5px 5px 5px inset rgb(129 175 50);
+        padding: 50px;
+        font-size: 35px;
+        border-radius:20px;
+        border-spacing: 20px;
+        /* border-collapse: collapse; */
+        }
+        table caption{
+        font-size: 50px;
+        }
+        td{
+        padding: 35px;
+        /* border: 1px solid rgb(129 175 50) ; */
+        /* border-radius:50% ; */
+        }
+        figure img{
+        width:20% ;
+        height: 200px;
+        object-fit:cover ;
+        }
+        figure{
+        outline: 1px solid black;
+        margin-left: 0;
+        position:relative;
+        z-index: 1;
+        }
+        #bee-1{
+        width: 5%;
+        transform: rotate(90deg);
+        position:absolute;
+        right: 10%;
+        animation: fly1 12s infinite ease-in;
+        }
+        #bee-2{
+        width: 5%;
+        position:absolute;
+        animation-delay: 1s;
+        animation: fly 16s infinite ease-out;
+        }
+        a{
+        font-size: 30px;
+        margin-right: 20px;
+        padding: 7px;
+        line-height: 150%;
+        }
+        a:hover{
+        color:rgba(0, 0, 0, 0.651);
+        background-color: grey;
+        text-decoration: none;
+        }
+        @keyframes fly{
+        from{transform:translateX(0) translateY(0)}
+        50% {transform:translateX(50vw) translateY(0)}
+        to{transform:translateX(50vw) translateY(195vh)}
+        }
+        @keyframes fly1{
+        from{transform:translateX(0) translateY(0)}
+        50% {transform:translateX(-40vw) translateY(0)}
+        to{transform:translateX(-40vw) translateY(195vh)}
+        }
+        @media (max-width:1000px) {
+        figure img {
+        width: 100%;
+        height: 400px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <img src="bee-2.gif" alt="" id="bee-1">
+    <img src="bee-2.gif" alt="" id="bee-2">
+    <main>
+    <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-bottom: 50px;text-shadow: 5px 5px 5px rgb(129 175 50);
+    font-size: 50px;">Spring 2023</h1>
+     <h2 style="font-family:'Dancing Script', cursive;
+     font-size: 35px;">
+        From you have I been absent in the spring,<br>
+When proud-pied April, dressed in all his trim,<br>
+Hath put a spirit of youth in everything,<br>
+That heavy Saturn laughed and leaped with him.<br>
+Yet nor the lays of birds, nor the sweet smell<br>
+Of different flowers in odour and in hue,<br>
+Could make me any summer’s story tell,<br>
+Or from their proud lap pluck them where they grew:<br>
+Nor did I wonder at the lily's white,<br>
+Nor praise the deep vermilion in the rose;<br>
+They were but sweet, but figures of delight<br>
+Drawn after you, – you pattern of all those.<br>
+Yet seem’d it winter still, and, you away,<br>
+As with your shadow I with these did play.
+     </h2>
+     <ul>
+      <li>blossom</li>
+      <li>flowers</li>
+      <li>singing birds</li>  
+     </ul>
+     <audio src="water.mp3" controls></audio>
+     <table>
+     <caption>
+        Calendar of spring</caption>  
+     <tr>
+        <td>March</td>
+        <td>31 days</td>
+     </tr>
+     <tr>
+        <td>April</td>
+        <td>30 days</td>
+     </tr> 
+     <tr>
+        <td>May</td>
+        <td>31days</td>
+     </tr>
+     </table>
+     <figure>
+      <img src="picture1.jpg" alt=""><img src="picture2.jpg" alt=""><img src="picture3.jpg" alt=""><img src="picture4.jpg" alt=""><img src="picture5.jpg" alt="">
+     </figure>
+     <a href="winter.html">winter</a><br>
+     <a href="summer.html">summer</a><br>
+     <a href="autumn.html">autumn</a>
+     </main>
+</body>
+</html>
